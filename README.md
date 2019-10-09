@@ -1,35 +1,13 @@
 Detect-CMS
 ==========
 
-PHP Library for detecting CMS
+Install cms.phar with  `curl -sS https://github.com/nfouka/Detect-CMS/blob/master/cms.phar -L -o cms.phar`
 
-Install
--------
 
-Add to your composer.json
 
-```json
-{
-    "repositories":[
-        {
-            "type": "vcs",
-            "url": "git@github.com:Krisseck/Detect-CMS.git"
-        }
-    ],
-    "require":{
-        "Detect-CMS":"1.0.*"
-    }
-}
-```
+Use 
+====
 
-How to use:
------------
+php cms.phar your_url_site
 
-    include(__DIR__ . "/vendor/autoload.php");
-    $domain = "http://google.com";
-    $cms = new \DetectCMS\DetectCMS($domain);
-    if($cms->getResult()) {
-        echo "Detected CMS: ".$cms->getResult();
-    } else {
-        echo "CMS couldn't be detected";
-    } 
+
